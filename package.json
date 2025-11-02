@@ -1,0 +1,15 @@
+{
+  "name": "grocerygo",
+  "private": true,
+  "version": "1.0.0",
+  "description": "GroceryGo monorepo scripts",
+  "scripts": {
+    "dev:server": "npm -C server run dev",
+    "dev:client": "npm -C client run dev",
+    "dev": "concurrently -n server,client -c green,cyan \"npm -C server run dev\" \"npm -C client run dev\"",
+    "build": "npm -C client run build"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  }
+}
