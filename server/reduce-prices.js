@@ -4,8 +4,8 @@ const Product = require('./models/Product');
 
 dotenv.config();
 
-// Percentage to reduce prices by (e.g., 20 means reduce by 20%)
-const REDUCTION_PERCENTAGE = 40;
+// Percentage to reduce prices by (e.g., 50 means reduce by 50%)
+const REDUCTION_PERCENTAGE = 50;
 
 async function reducePrices() {
   try {
